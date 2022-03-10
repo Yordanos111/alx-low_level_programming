@@ -4,7 +4,7 @@
 /**
  * main - Entery point
  *
- * Return: Aways 1
+ * Return: Aways 1 (Success)
  */
 int main(void)
 {
