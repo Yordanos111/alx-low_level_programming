@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Prints to standard error
+ * main - Prints to the standard error
  *
- * return: is 1
+ * Return: one
  */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
 	return (1);
 }
