@@ -15,7 +15,7 @@ int main(void)
 	{
 		ld = nm % 10;
 		fd = nm / 10;
-		if (fd > ld)
+		if (fd >= ld)
 		{
 			continue;
 		}
