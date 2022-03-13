@@ -11,7 +11,7 @@ int main(void)
 	int ld;
 	int fd;
 
-	for (nm = 1; nm <= 89; nm++)
+	for (nm = 1; nm <= 99; nm++)
 	{
 		ld = nm % 10;
 		fd = nm / 10;
@@ -21,9 +21,11 @@ int main(void)
 		}
 		putchar(fd + '0');
 		putchar(ld + '0');
-
+		if (nm >= 1 && nm < 89)
+		{
 		putchar(',');
 		putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
