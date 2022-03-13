@@ -8,13 +8,20 @@
 int main(void)
 {
 	int nm;
+	int ld;
+	int fd;
 
 	for (nm = 1; nm <= 89; nm++)
 	{
-		putchar((nm / 10) + '0');
-		putchar((nm % 10) + '0');
-		if (nm == 89)
-			break;
+		ld = nm % 10;
+		fd = nm / 10;
+		if (fd > ld)
+		{
+			continue;
+		}
+		putchar(fd + '0');
+		putchar(ld + '0');
+
 		putchar(',');
 		putchar(' ');
 	}
