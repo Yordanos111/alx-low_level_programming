@@ -1,39 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - Prints combinations of two combinations od two digits
+ * main - prints all possible combinations of two two-digit numbers
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i;
-	int j;
-	int fdi;
-	int ldi;
-	int fdj;
-	int ldj;
+	int i, j;
+	int a, b, c, d;
 
-	for (i = 0; i <= 99; i++)
+	for (i = 0; i < 100; i++)
 	{
-		fdi = i / 10;
-		ldi = i % 10;
+		a = i / 10; /* tens firstnum */
+		b = i % 10; /* unit firstnum */
 
-		for (j = 0; j <= 99; j++)
+		for (j = 0; j < 100; j++)
 		{
-			fdj = j / 10;
-			ldj = j / 10;
+			c = j / 10; /* tens secondnum */
+			d = j % 10; /* unit secondnum */
 
-			if (fdi < fdj || (fdi == fdj && ldi < ldj))
+			if (a < c || (a == c && b < d))
 			{
-				putchar(fdi + '0');
-				putchar(ldi + '0');
+				putchar(a + '0');
+				putchar(b + '0');
 				putchar(' ');
-				putchar(fdj + '0');
-				putchar(ldj + '0');
+				putchar(c + '0');
+				putchar(d + '0');
 
-				if (!(fdi == 9 && ldi == 8))
+				if (!(a == 9 && b == 8))
 				{
 					putchar(',');
 					putchar(' ');
@@ -41,7 +37,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
+		putchar(10);
+		return (0);
 }
-
