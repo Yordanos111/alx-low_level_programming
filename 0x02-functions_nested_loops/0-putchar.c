@@ -12,7 +12,7 @@ int main(void)
 	{
 		while (*main)
 		{
-			_putchar(*putchat)
+			_putchar(*putchar)
 		}
 	}
 }
