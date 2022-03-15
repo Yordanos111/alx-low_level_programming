@@ -8,13 +8,14 @@
 
 int main(void)
 {
-	char *main = "_putchar";
+	char yordanos[] = "_putchar";
+
+	int c;
+
+	for (c = 0; c < 8; c++)
 	{
-		while (*main)
-		{
-			_putchar(*putchar)
-		}
+		_putchar(Yordanos[c]);
 	}
-}
+	_putchar('\n');
 	return (0);
 }
