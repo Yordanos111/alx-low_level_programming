@@ -3,7 +3,7 @@
 /**
  * print_sign - prints the sign of a number
  * @n: takes a number (sign of a number)
- * Return: 1 and prints + if n is greater than zero, 0 and prints 0 if n is 0, returns -1 and prints -1 if n is negative
+ * Return: 1 if n posetive, 0 n is 0, -1 and if n is negative
  */
 int print_sign(int n)
 {
