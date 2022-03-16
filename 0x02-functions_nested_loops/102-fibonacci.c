@@ -17,6 +17,6 @@ int main(void)
 		pri = sec;
 		sec = sum;
 	}
-	 printf("\n");
-	 return (0);
+	printf("\n");
+	return (0);
 }
