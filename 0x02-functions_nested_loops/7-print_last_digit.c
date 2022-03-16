@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - .rints the last digit of a number
- * @c takes in a number
+ * @c: takes in a number
  * Return: ourput
  */
 int print_last_digit(int c)
