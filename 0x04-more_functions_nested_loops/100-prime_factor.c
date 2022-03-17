@@ -1,12 +1,11 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - prints largest prime factor
+ * main - main function
  *
  * Return: Always 0
  */
-int main() 
+int main(void)
 {
 	unsigned int a = 2;
 	unsigned long n = 612852475143;
