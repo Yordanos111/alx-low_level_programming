@@ -6,13 +6,12 @@
 void puts_half(char *str)
 {
 	int m, n, i, j;
-	
+
 	int string_length(char *pointer);
 	m = string_length(str) / 2;
-
 	if (string_length(str) % 2 == 0)
 	{
-		for (i = m; i < string_length(str); i++)
+		for (i = m; i <= string_length(str); i++)
 		{
 			_putchar(str[i]);
 		}
