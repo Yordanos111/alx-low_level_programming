@@ -8,6 +8,7 @@
 void print_rev(char *s)
 {
 	int i;
+
 	int string_length(char *pointer);
 
 	i = string_length(s) - 1;
