@@ -3,8 +3,8 @@
 
 /**
  * str_concat - concatenates two strings
- * @s1: first string
- * @s2: second string
+ * @s1: the first string
+ * @s2: the second string
  * Return: pointer of an array of chars
  */
 char *str_concat(char *s1, char *s2)
