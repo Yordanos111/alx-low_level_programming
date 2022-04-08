@@ -11,5 +11,8 @@ void _is_zero(char *argv[]);
 char *_initialize_array(char *ar, int lar);
 char *_initialize_array(char *ar, int lar);
 int main(int argc, char *argv[]);
+int _atoi(const char *s);
+void print_int(unsigned long int n);
+void _puts(char *str);
 
 #endif
