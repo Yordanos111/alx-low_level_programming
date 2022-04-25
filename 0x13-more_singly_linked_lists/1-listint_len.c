@@ -8,11 +8,11 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t i = 0;
-	const listint_t *traverse = h;
+	const listint_t *st = h;
 
-	while (traverse != NULL)
+	while (st != NULL)
 	{
-		traverse = traverse->next;
+		st = st->next;
 		i++;
 	}
 	return (i);
