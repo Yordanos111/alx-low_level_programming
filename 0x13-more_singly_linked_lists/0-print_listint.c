@@ -8,13 +8,13 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t i = 0;
-	const listint_t *traverse = h;
+	const listint_t *st = h;
 
-	while (traverse != NULL)
+	while (st != NULL)
 	{
-		printf("%d\n", traverse->n); /*printf is allowed for this task*/
+		printf("%d\n", st->n); /*printf is allowed for this task*/
 		i++;
-		traverse = traverse->next;
+		st = st->next;
 	}
 	return (i);
 }
